@@ -1,0 +1,22 @@
+{
+  "name": "NodeFlow",
+  "version": "0.0.0",
+  "description": "Opinionated Node.js workflow tool.",
+  "main": "bin/flow.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajthor/NodeFlow.git"
+  },
+  "keywords": [
+    "workflow"
+  ],
+  "author": "Adam Thorpe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajthor/NodeFlow/issues"
+  },
+  "homepage": "https://github.com/ajthor/NodeFlow"
+}
