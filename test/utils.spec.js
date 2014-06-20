@@ -43,6 +43,40 @@ describe('exported object', function() {
             });
 
         });
+        
+        describe('gitAdd function', function() {
+
+            var gitAdd = utilsJs.gitAdd;
+
+            it('should exist', function() {
+                expect(gitAdd).to.exist;
+            });
+
+        });
+
+        describe('gitCommit function', function() {
+
+            var gitCommit = utilsJs.gitCommit;
+
+            it('should exist', function() {
+                expect(gitCommit).to.exist;
+            });
+
+            it('should accept an object', function() {
+                var obj = {};
+
+                expect(function() {
+                    gitCommit(obj, function(err) {
+                        if (err) {
+                            throw err;
+                        }
+                        done();
+                    });
+                }).to.not.throw(Error);
+            });
+
+        });
+
 
 
     });
