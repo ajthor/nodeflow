@@ -62,7 +62,7 @@ describe('exported object', function() {
                 expect(gitCommit).to.exist;
             });
 
-            it('should accept an object', function() {
+            it('should accept an object', function(done) {
                 var obj = {};
 
                 expect(function() {
